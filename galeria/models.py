@@ -22,4 +22,3 @@ class Fotografia(models.Model):
 
     def __str__(self):
         return f'Fotografia [nome={self.nome}]'
-
