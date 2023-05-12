@@ -13,7 +13,7 @@ class Categoria(models.Model):
 class Fotografia(models.Model):
     nome = models.CharField(max_length=100, null=False, blank=False)
     legenda = models.CharField(max_length=150, null=False, blank=False)
-    categoria = models.ForeignKey('galeria.Categoria', on_delete=models.CASCADE, null=True)
+    categoria = models.ForeignKey('galeria.Categoria', on_delete=models.SET_NULL, null=True)
     descricao = models.TextField(null=False, blank=False)
     foto = models.ImageField(upload_to='fotos/%Y/%m/%d/', blank=True)
     publicada = models.BooleanField(default=False)
@@ -21,4 +21,4 @@ class Fotografia(models.Model):
 
 
     def __str__(self):
-        return f'Fotografia [nome={self.nome}]'
+        return self.nome

@@ -1,0 +1,30 @@
+[
+{
+    "model": "galeria.categoria",
+    "pk": 1,
+    "fields": {
+        "categoria": "Nebulosa"
+    }
+},
+{
+    "model": "galeria.categoria",
+    "pk": 2,
+    "fields": {
+        "categoria": "Estrela"
+    }
+},
+{
+    "model": "galeria.categoria",
+    "pk": 3,
+    "fields": {
+        "categoria": "Galáxia"
+    }
+},
+{
+    "model": "galeria.categoria",
+    "pk": 4,
+    "fields": {
+        "categoria": "Planeta"
+    }
+}
+]

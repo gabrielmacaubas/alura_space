@@ -1,0 +1,54 @@
+[
+{
+    "model": "galeria.fotografia",
+    "pk": 2,
+    "fields": {
+        "nome": "Nebulosa de Carina",
+        "legenda": "webbteloscope / NASA / James Webb",
+        "categoria": 1,
+        "descricao": "lorem",
+        "foto": "fotos/2023/05/12/carina-nebula.png",
+        "publicada": true,
+        "data_fotografia": "2023-05-12T11:25:00Z"
+    }
+},
+{
+    "model": "galeria.fotografia",
+    "pk": 3,
+    "fields": {
+        "nome": "Nebulosa N159",
+        "legenda": "nasa.org / NASA / Hubble",
+        "categoria": 1,
+        "descricao": "Fotografia do espaço tirada pelo telescópio Hubble",
+        "foto": "fotos/2023/05/12/N159-nebulosa.jpg",
+        "publicada": true,
+        "data_fotografia": "2023-05-12T11:25:44Z"
+    }
+},
+{
+    "model": "galeria.fotografia",
+    "pk": 4,
+    "fields": {
+        "nome": "Galáxia NGC 1079",
+        "legenda": "nasa.org / NASA / Huble",
+        "categoria": 3,
+        "descricao": "Fotografia da galáxia ngc 1079 tirada pelo telescópio hubble",
+        "foto": "fotos/2023/05/12/hubble_ngc1079.jpg",
+        "publicada": true,
+        "data_fotografia": "2023-05-12T11:41:01Z"
+    }
+},
+{
+    "model": "galeria.fotografia",
+    "pk": 5,
+    "fields": {
+        "nome": "Galáxia de Andromeda",
+        "legenda": "nasa.org / NASA / Huble",
+        "categoria": 3,
+        "descricao": "Fotografia de Andromeda",
+        "foto": "",
+        "publicada": false,
+        "data_fotografia": "2023-05-12T11:58:00Z"
+    }
+}
+]

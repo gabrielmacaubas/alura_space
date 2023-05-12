@@ -18,4 +18,3 @@ class ListandoCategorias(admin.ModelAdmin):
 
 admin.site.register(Fotografia, ListandoFotografias)
 admin.site.register(Categoria, ListandoCategorias)
-
