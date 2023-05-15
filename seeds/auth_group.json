@@ -1,0 +1,15 @@
+[
+{
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+        "name": "FotografiaAdmin",
+        "permissions": [
+            25,
+            26,
+            27,
+            28
+        ]
+    }
+}
+]
