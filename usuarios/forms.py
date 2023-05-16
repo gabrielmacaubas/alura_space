@@ -99,8 +99,10 @@ class CadastroForms(forms.Form):
 
         if User.objects.filter(username=nome).exists():
             raise forms.ValidationError('Nome de usuário já cadastrado!')
+            
+        return nome
 
-
+    
     def save(self, commit=True):
         nome = self.cleaned_data.get('nome_cadastro')
         email = self.cleaned_data.get('email')
