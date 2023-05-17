@@ -1,0 +1,80 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$c3nhNCCFxi9BKmb5jzpg3R$gUhWjU09+3M5aJTp98/pyoxRi+kufkO7eOVeaaSqnFY=",
+        "last_login": "2023-05-17T14:51:13.653Z",
+        "is_superuser": true,
+        "username": "gabriel",
+        "first_name": "",
+        "last_name": "",
+        "email": "gabrielmacaubas@outlook.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-05-12T11:21:08.947Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$aDtHQTRmhr8PVgD9lDVrCR$L7H1pPL51LARDTBhMOojiE5nTCJ+0k5tnsXLAeQx7Jw=",
+        "last_login": "2023-05-12T13:33:48.191Z",
+        "is_superuser": false,
+        "username": "Ana",
+        "first_name": "Ana",
+        "last_name": "Silva",
+        "email": "ana@xpto.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-05-12T13:26:02Z",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$a9qfvygto8VSC7a0m4QhYC$pndXc9Vfzl7l6gVmzV2fxPjkd/DHX0GNzSK9aYO2Kqw=",
+        "last_login": "2023-05-17T14:07:10.806Z",
+        "is_superuser": false,
+        "username": "lucas",
+        "first_name": "",
+        "last_name": "",
+        "email": "lucas@xpto.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-05-15T12:49:35Z",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 13,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$MMnIRX6T95hidHllxYSFHV$GNWK0Fu2k84TR78/B3PGHU6O+EfRg6I1KrqmDxN/EJQ=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "eduardo",
+        "first_name": "",
+        "last_name": "",
+        "email": "eduardo@algumacoisa.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-05-17T13:56:50.347Z",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+}
+]

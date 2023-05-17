@@ -24,17 +24,30 @@ class LoginForms(forms.Form):
             }
         )
     )
+    
+
+    def clean_nome_login(self):
+        nome = self.cleaned_data.get('nome_login')
+
+        if nome:
+            nome = nome.strip()
+            validacao = User.objects.filter(username=nome).exists()
+
+            if not validacao:
+                raise forms.ValidationError('Nome de usuário não cadastrado!')
+            
+            return nome
 
 
 class CadastroForms(forms.Form):
     nome_cadastro = forms.CharField(
-        label='Nome de Cadastro',
+        label='Usuário',
         required=True,
         max_length=100,
         widget=forms.TextInput(
             attrs={
                 "class": "form-control",
-                "placeholder": "Ex.: João Silva"
+                "placeholder": "Ex.: João"
             }
         )
     )
@@ -88,19 +101,28 @@ class CadastroForms(forms.Form):
     def clean_email(self):
         email = self.cleaned_data.get('email')
 
-        if User.objects.filter(email=email).exists():
-            raise forms.ValidationError('Email já cadastrado!')
+        if email:
+            email = email.strip()
 
-        return email
+            if User.objects.filter(email=email).exists():
+                raise forms.ValidationError('Email já cadastrado!')
+
+            return email
     
 
     def clean_nome_cadastro(self):
         nome = self.cleaned_data.get('nome_cadastro')
 
-        if User.objects.filter(username=nome).exists():
-            raise forms.ValidationError('Nome de usuário já cadastrado!')
+        if nome:
+            nome = nome.strip()
+
+            if ' ' in nome:
+                raise forms.ValidationError('Não é possivel inserir espaços dentro do campo usuário')
             
-        return nome
+            elif User.objects.filter(username=nome).exists():
+                raise forms.ValidationError('Nome de usuário já cadastrado!')
+                
+            return nome
 
     
     def save(self, commit=True):

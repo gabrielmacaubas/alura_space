@@ -9,7 +9,8 @@
         "descricao": "lorem",
         "foto": "fotos/2023/05/12/carina-nebula.png",
         "publicada": true,
-        "data_fotografia": "2023-05-12T11:25:00Z"
+        "data_fotografia": "2023-05-12T11:25:00Z",
+        "usuario": null
     }
 },
 {
@@ -22,7 +23,8 @@
         "descricao": "Fotografia do espaço tirada pelo telescópio Hubble",
         "foto": "fotos/2023/05/12/N159-nebulosa.jpg",
         "publicada": true,
-        "data_fotografia": "2023-05-12T11:25:44Z"
+        "data_fotografia": "2023-05-12T11:25:44Z",
+        "usuario": null
     }
 },
 {
@@ -35,7 +37,8 @@
         "descricao": "Fotografia da galáxia ngc 1079 tirada pelo telescópio hubble",
         "foto": "fotos/2023/05/12/hubble_ngc1079.jpg",
         "publicada": true,
-        "data_fotografia": "2023-05-12T11:41:01Z"
+        "data_fotografia": "2023-05-12T11:41:01Z",
+        "usuario": null
     }
 },
 {
@@ -48,7 +51,8 @@
         "descricao": "Fotografia de Andromeda",
         "foto": "",
         "publicada": false,
-        "data_fotografia": "2023-05-12T11:58:00Z"
+        "data_fotografia": "2023-05-12T11:58:00Z",
+        "usuario": null
     }
 }
 ]
