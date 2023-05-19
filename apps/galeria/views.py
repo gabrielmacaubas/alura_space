@@ -35,7 +35,7 @@ def buscar(request):
         if nome_a_buscar:
             fotografias = fotografias.filter(nome__icontains=nome_a_buscar)
 
-    return render(request, 'galeria/buscar.html', {"cards": fotografias})
+    return render(request, 'galeria/index.html', {"cards": fotografias})
 
 
 def nova_imagem(request):
@@ -59,6 +59,11 @@ def nova_imagem(request):
 
 
 def editar_imagem(request, foto_id):
+    if not request.user.is_authenticated:
+        messages.error(request, 'Usuário não logado')
+        
+        return redirect('login')
+
     fotografia = Fotografia.objects.get(pk=foto_id)
 
     form = FotografiaForms(
@@ -92,5 +97,4 @@ def filtro(request, categoria):
         publicada=True, 
         categoria__categoria=categoria
     ).select_related('categoria').order_by('-data_fotografia')
-
     return render(request, 'galeria/index.html', {"cards": fotografias})

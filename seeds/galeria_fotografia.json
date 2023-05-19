@@ -7,7 +7,7 @@
         "legenda": "webbteloscope / NASA / James Webb",
         "categoria": 1,
         "descricao": "Foto tirada pelo telescópio James Webb",
-        "foto": "fotos/2023/05/12/carina-nebula.png",
+        "foto": "fotos/2023/05/19/carina-nebula.png",
         "publicada": true,
         "data_fotografia": "2023-05-19T03:00:00Z",
         "usuario": 1
@@ -21,7 +21,7 @@
         "legenda": "nasa / nsa.org / Hubble",
         "categoria": 3,
         "descricao": "Galáxia fotografada",
-        "foto": "fotos/2023/05/19/hubble_ngc1079_GYGsGvW.jpg",
+        "foto": "fotos/2023/05/19/hubble_ngc1079.jpg",
         "publicada": true,
         "data_fotografia": "2023-05-19T03:00:00Z",
         "usuario": 1
