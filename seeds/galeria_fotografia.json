@@ -3,14 +3,28 @@
     "model": "galeria.fotografia",
     "pk": 2,
     "fields": {
-        "nome": "Nebulosa de Carina",
+        "nome": "Carina Nebula",
         "legenda": "webbteloscope / NASA / James Webb",
         "categoria": 1,
-        "descricao": "lorem",
+        "descricao": "Foto tirada pelo telescópio James Webb",
         "foto": "fotos/2023/05/12/carina-nebula.png",
         "publicada": true,
-        "data_fotografia": "2023-05-12T11:25:00Z",
-        "usuario": null
+        "data_fotografia": "2023-05-19T03:00:00Z",
+        "usuario": 1
+    }
+},
+{
+    "model": "galeria.fotografia",
+    "pk": 3,
+    "fields": {
+        "nome": "Galáxia NGC 1079",
+        "legenda": "nasa / nsa.org / Hubble",
+        "categoria": 3,
+        "descricao": "Galáxia fotografada",
+        "foto": "fotos/2023/05/19/hubble_ngc1079_GYGsGvW.jpg",
+        "publicada": true,
+        "data_fotografia": "2023-05-19T03:00:00Z",
+        "usuario": 1
     }
 }
 ]
